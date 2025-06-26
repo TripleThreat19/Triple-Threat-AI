@@ -23,7 +23,7 @@ La **Raspberry Pi 5** es el cerebro de nuestro sistema, definida por la misma Ra
 
 La **Raspberry Pi 5** es ideal para nuestro robot por su **gran potencia de procesamiento para IA y visión**, lo que nos permite implementar algoritmos complejos. Su **amplia RAM** asegura una multitarea eficiente y su **conectividad avanzada** facilita la comunicación. Además, el **almacenamiento SSD ultrarrápido** y los **conectores MIPI duales para cámaras** son fundamentales para la percepción y toma de decisiones en tiempo real, garantizando un robot de **alto rendimiento y gran fiabilidad**.
 
-![Raspberry Pi 5](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/raspberry-pi-5.jpg)
+![Raspberry Pi 5](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/raspberry-pi-5.jpg)
 
 #### 🔌 Puente H
 
