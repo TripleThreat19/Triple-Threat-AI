@@ -43,7 +43,7 @@ Un **Puente H** es un circuito electrónico crucial que nos permite **invertir l
 
 El **Puente H** es fundamental para nuestro robot porque permite el **control total del motor**: puede cambiar el sentido de giro (adelante/atrás) y, con PWM, controlar la velocidad con precisión. Además, actúa como un **escudo protector para el motor**, aislando los componentes sensibles y garantizando la fiabilidad y seguridad del sistema.
 
-![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Purnte%20H.jpg)
+![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Purnte%20H.jpg)
 
 #### 📸 Raspberry Pi AI Camera
 
