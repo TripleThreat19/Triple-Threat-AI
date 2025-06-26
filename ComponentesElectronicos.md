@@ -29,14 +29,14 @@
 
  **_Características_**
 
-- Control del sentido de giro: Permite invertir la polaridad del voltaje aplicado a un motor , lo que le permite girar hacia adelante o hacia atrás. Es su función esencial.
+- Control del sentido de giro: Permite invertir la polaridad del voltaje aplicado a un motor codificador Optico, lo que le permite girar hacia adelante o hacia atrás. Es su función esencial.
 - Control de velocidad: Al integrar una señal de Modulación por Ancho de Pulso (PWM), puede variar la velocidad del motor de manera eficiente.
 - Capacidad de corriente y voltaje: Cada puente H está diseñado para manejar un rango específico de corriente y voltaje, crucial para que coincida con los requisitos del motor y evitar daños.
 - Protecciones integradas: Muchos puentes H comerciales (en circuitos integrados) incluyen protecciones contra sobrecorriente, cortocircuitos y sobrecalentamiento, aumentando la seguridad y durabilidad.
 - Compatibilidad con microcontroladores: Son fácilmente controlables por microcontroladores como la Raspberry Pi o Arduino, simplificando la lógica de control del motor.
 - Aislamiento y protección del microcontrolador: El puente H actúa como una interfaz de potencia entre el microcontrolador (que opera con bajos voltajes y corrientes) y el motor (que consume mucha más potencia). Esto protege los componentes de control sensibles de las altas corrientes, voltajes y ruidos generados por el motor.
 
-El Puente H es fundamental para nuestro robot porque permite el control total de los motores: puede cambiar el sentido de giro (adelante/atrás) y, con PWM, controlar la velocidad con precisión. Además, actúa como un escudo protector para nuestra Raspberry Pi, aislando los componentes sensibles del motor y garantizando la fiabilidad y seguridad del sistema.
+El Puente H es fundamental para nuestro robot porque permite el control total del motor: puede cambiar el sentido de giro (adelante/atrás) y, con PWM, controlar la velocidad con precisión. Además, actúa como un escudo protector para el motor, aislando los componentes sensibles y garantizando la fiabilidad y seguridad del sistema.
 
  ![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Purnte%20H.jpg)
 
@@ -71,7 +71,7 @@ La Raspberry Pi AI Camera es fundamental para nuestro robot porque permite la IA
      -Un puerto Tipo-C con capacidad de carga rápida
 -Cables incorporados: Algunos modelos del PB-607 incluyen cables integrados, típicamente uno para dispositivos iPhone (Lightning) y otro Tipo-C, lo que es muy conveniente ya que no necesitas llevar cables adicionales.
 
-El Power Bank PB-607 es vital para nuestro robot porque le otorga autonomía de operación, al ser una fuente de energía portátil y duradera de 10,000 mAh. Esto permite que el robot se mueva y funcione libremente sin necesidad de estar enchufado, siendo esencial para su movilidad y continuidad. Además, puede recargar otros componentes vía USB o Tipo-C, asegurando que todo el sistema se mantenga operativo y fiable.
+El Power Bank PB-607 es vital para nuestro robot porque le otorga autonomía de operación al ser una fuente de energía portátil y duradera de 10,000 mAh. Esta capacidad permite alimentar la Raspberry Pi 5, asegurando que el robot se mueva y funcione libremente sin necesidad de estar enchufado, lo cual es esencial para su movilidad y continuidad. Además, sus puertos USB y Tipo-C le permiten recargar otros componentes, manteniendo todo el sistema operativo y fiable.
 
  ![Power Bank PB-607](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/PowerBank%20.jpg)
 
@@ -106,8 +106,14 @@ Un regulador de voltaje electrónico en robótica es un componente crucial dise�
 - Engranajes reductores: Un sistema de engranajes que reduce la velocidad del motor pero aumenta su torque (fuerza de giro), permitiendo movimientos más controlados y con mayor fuerza.Pueden ser reductores (buck) para bajar el voltaje de la batería (ej. de 12V a 5V para la Pi) o incluso elevadores (boost) si un componente necesita un voltaje mayor que el de la batería
 - Eficiencia Energética (para Robots Autónomos): En robótica, la eficiencia es fundamental para la autonomía.
   
-El Regulador de Voltaje Electrónico es indispensable para el robot porque asegura una alimentación eléctrica constante y estable a todos sus componentes. Esto es clave para proteger la electrónica sensible (motores) de daños por variaciones de voltaje, garantiza el rendimiento óptimo y fiable de motores y sensores, y maximiza la autonomía del robot al mejorar la eficiencia energética. En esencia, es el guardián que mantiene el sistema eléctrico del robot funcionando de forma segura y eficaz.
+El Regulador de Voltaje Electrónico es indispensable para el robot porque asegura una alimentación eléctrica constante y estable específicamente para el/los servomotor(es). Es vital para:
 
+- Proteger los servomotor: Garantiza que reciba siempre el voltaje óptimo, previniendo daños por fluctuaciones de la batería o picos de carga.
+- Eficiencia Energética (para Robots Autónomos): En robótica, la eficiencia es fundamental para la autonomía.
+- Asegurar su rendimiento preciso: Un voltaje estable es clave para el funcionamiento fiable y la precisión de movimiento del/de los servomotor(es).
+- Maximizar la autonomía: Al usar reguladores conmutados eficientes, minimiza la pérdida de energía en la alimentación del/de los servomotor(es), prolongando la duración de la batería del robot.
+
+En esencia, el regulador
  ![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/servomotor.jpg)
 
 
