@@ -58,4 +58,24 @@ El Puente H es fundamental para nuestro robot porque permite el control total de
 La Raspberry Pi AI Camera es fundamental para nuestro robot porque permite la IA en el borde, procesando visión directamente en el chip. Esto libera recursos de la Pi 5, reduce la latencia y la necesidad de ancho de banda. Su alta resolución y la capacidad de enviar metadatos de IA pre-procesados simplifican el desarrollo. Además, es energéticamente eficiente, clave para la autonomía del robot. En definitiva, convierte a nuestro robot en un agente inteligente y reactivo capaz de percibir e interpretar su entorno de forma autónoma.
 
  ![La Raspberry Pi AI Camera](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Camara%20Rasberry%20PI%205.jpg)
+ 
+
+  **Power Bank PB-607**
+
+ El Power Bank PB-607 es un cargador portátil o batería externa, fabricado por la marca Harvic. Está diseñado para recargar dispositivos electrónicos como teléfonos inteligentes, tabletas y otros gadgets cuando no tienes acceso a una toma de corriente.
+ 
+  **_Características_**
+
+- Capacidad: 10,000mAh (miliamperios-hora). Esta es una capacidad común que permite varias cargas completas.
+- Tipo de batería: Polímero de Litio. Este tipo de batería es ligero, tiene un buen rendimiento y es más seguro que las antiguas baterías de iones de litio en algunos aspectos.
+- Salida (Output): 5V-2.1A. Esto indica la velocidad de carga para tus dispositivos. Un output de 2.1A es considerado una carga rápida para muchos dispositivos móviles.
+- Puertos de salida:
+     -Un puerto USB estándar (tipo A).
+     -Un puerto Tipo-C con capacidad de carga rápida
+-Cables incorporados: Algunos modelos del PB-607 incluyen cables integrados, típicamente uno para dispositivos iPhone (Lightning) y otro Tipo-C, lo que es muy conveniente ya que no necesitas llevar cables adicionales.
+
+El Power Bank PB-607 es vital para nuestro robot porque le otorga autonomía de operación, al ser una fuente de energía portátil y duradera de 10,000 mAh. Esto permite que el robot se mueva y funcione libremente sin necesidad de estar enchufado, siendo esencial para su movilidad y continuidad. Además, puede recargar otros componentes vía USB o Tipo-C, asegurando que todo el sistema se mantenga operativo y fiable.
+
+ ![Power Bank PB-607](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Camara%20Rasberry%20PI%205.jpg)
+
 
