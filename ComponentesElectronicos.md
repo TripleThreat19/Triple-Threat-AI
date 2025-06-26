@@ -76,6 +76,6 @@ La Raspberry Pi AI Camera es fundamental para nuestro robot porque permite la IA
 
 El Power Bank PB-607 es vital para nuestro robot porque le otorga autonomía de operación, al ser una fuente de energía portátil y duradera de 10,000 mAh. Esto permite que el robot se mueva y funcione libremente sin necesidad de estar enchufado, siendo esencial para su movilidad y continuidad. Además, puede recargar otros componentes vía USB o Tipo-C, asegurando que todo el sistema se mantenga operativo y fiable.
 
- ![Power Bank PB-607](Componentes Electronicos/PowerBank .jpg)
+ ![Power Bank PB-607](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/PowerBank%20.jpg)
 
 
