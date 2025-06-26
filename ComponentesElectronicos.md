@@ -57,5 +57,5 @@ El Puente H es fundamental para nuestro robot porque permite el control total de
 
 La Raspberry Pi AI Camera es fundamental para nuestro robot porque permite la IA en el borde, procesando visión directamente en el chip. Esto libera recursos de la Pi 5, reduce la latencia y la necesidad de ancho de banda. Su alta resolución y la capacidad de enviar metadatos de IA pre-procesados simplifican el desarrollo. Además, es energéticamente eficiente, clave para la autonomía del robot. En definitiva, convierte a nuestro robot en un agente inteligente y reactivo capaz de percibir e interpretar su entorno de forma autónoma.
 
- ![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Purnte%20H.jpg)
+ ![La Raspberry Pi AI Camera](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Camara%20Rasberry%20PI%205.jpg))
 
