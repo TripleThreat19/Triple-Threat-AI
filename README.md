@@ -49,7 +49,7 @@ Este Repositorio reúne toda la documentación técnica del proyecto Orlando, de
 
 El Puente H es fundamental para nuestro robot porque permite el control total de los motores: puede cambiar el sentido de giro (adelante/atrás) y, con PWM, controlar la velocidad con precisión. Además, actúa como un escudo protector para nuestra Raspberry Pi, aislando los componentes sensibles del motor y garantizando la fiabilidad y seguridad del sistema.
 
- ![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/raspberry-pi-5.jpg)
+ ![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Purnte%20H.jpg)
 
 
  
