@@ -101,7 +101,7 @@ Un **servomotor** es un tipo de motor especial que se diferencia de los motores 
 
 El **servomotor** es crucial para nuestro robot porque permite un **control de posición angular preciso**, a diferencia de los motores DC simples. Esto es fundamental para que el robot realice **movimientos exactos y articulados**, como orientar cámaras o manipular objetos. Su sistema de lazo cerrado y el control por PWM simplifican la programación de movimientos complejos, asegurando que el robot interactúe con su entorno de forma controlada y efectiva.
 
-![Servomotor](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/servomotor.jpg)
+![Servomotor](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/servomotor.jpg)
 
 #### ⚡ Regulador de Voltaje
 
