@@ -81,8 +81,7 @@ El **Power Bank PB-607** es un cargador portátil o batería externa, fabricado 
 
 El **Power Bank PB-607** es vital para nuestro robot porque le otorga **autonomía de operación** al ser una fuente de energía portátil y duradera de 10,000 mAh. Esta capacidad permite alimentar la Raspberry Pi 5, asegurando que el robot se mueva y funcione libremente sin necesidad de estar enchufado, lo cual es esencial para su movilidad y continuidad. Además, sus puertos USB y Tipo-C le permiten recargar otros componentes, manteniendo todo el sistema operativo y fiable.
 
-![Power Bank PB-607](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/PowerBank%20.jpg)
-
+![Power Bank PB-607](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/PowerBank%20.jpg)
 #### ⚙️ Servomotor
 
 Un **servomotor** es un tipo de motor especial que se diferencia de los motores de corriente continua (DC) o alterna (AC) convencionales por su capacidad de **controlar con precisión su posición angular, velocidad y, en algunos casos, su aceleración**. Piensa en él como un motor que no solo gira, sino que sabe exactamente dónde está y puede ir a una posición específica y mantenerla, incluso si hay una fuerza externa que intenta moverlo.
