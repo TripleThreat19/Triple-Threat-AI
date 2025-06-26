@@ -5,7 +5,7 @@
 ## 🚀 Categoría: Futuros Ingenieros WRO 2025
 
 <p align="center">
-  [![Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)](https://github.com/TripleThreat19/Triple-Threat-AI)
+  ![Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 </p>
 
 ---
