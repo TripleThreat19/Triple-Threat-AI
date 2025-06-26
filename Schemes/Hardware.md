@@ -144,4 +144,4 @@ El **Motor Codificador Óptico Makeblock 180** es un tipo de motor DC (corriente
 
 El **Motor Codificador Óptico Makeblock 180** es fundamental para nuestro robot porque ofrece un **control de movimiento preciso y con retroalimentación**. Su codificador óptico permite a la Raspberry Pi 5 conocer exactamente la posición, velocidad y distancia recorrida, lo cual es indispensable para una **navegación autónoma exacta, control de movimiento fino** (giros y paradas precisas), detección de bloqueos y una **mayor fiabilidad y repetibilidad** en sus desplazamientos. Transforma al robot en un sistema de **navegación inteligente y confiable**.
 
-![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/motor%20codificador%20optico%20Makeblock%20180.jpg)
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/motor%20codificador%20optico%20Makeblock%20180.jpg)
