@@ -1,5 +1,5 @@
 # Triple-Threat
-![Logo del Equipo](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Fotos%20deL%20Robot/Arriba%20.jpg)
+![Logo del Equipo](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 Categoría Futuros Ingenieros 
 
 # DIARIO DE INGIENERIA/DOCUMENTO
