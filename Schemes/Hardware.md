@@ -125,7 +125,7 @@ El **Regulador de Voltaje Electrónico** es indispensable para el robot porque a
 
 En esencia, el regulador es fundamental para la **fiabilidad y la prolongación de la vida útil** de los componentes eléctricos del robot.
 
-![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/Regulador%20de%20Voltaje.jpg)
+![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Regulador%20de%20Voltaje.jpg)
 
 #### ⚙️ Motor Codificador Óptico Makeblock 180
 
