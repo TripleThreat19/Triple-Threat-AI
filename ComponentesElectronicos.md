@@ -94,4 +94,20 @@ El servomotor es crucial para nuestro robot porque permite un control de posici�
  ![Servomotor](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/servomotor.jpg)
 
 
+ **Regulador de Voltaje**
+
+Un regulador de voltaje electrónico en robótica es un componente crucial diseñado para mantener una tensión eléctrica de salida constante y estable para los distintos sistemas del robot, sin importar las variaciones en la fuente de alimentación (como una batería que se descarga) o los cambios en la demanda de energía de los componentes del robot.
+   
+  **_Características_**
+
+-Estabilización de la Tensión de Suministro: Su función principal es vital para un robot. Asegura que la Raspberry Pi, los servomotores y los sensores reciban el voltaje exacto que necesitan (por ejemplo, 5V para la Pi), incluso si la batería del robot comienza a descargarse y su voltaje total disminuye. Esto es crucial para la estabilidad y fiabilidad del sistema.
+- Manejo de Diferentes Niveles de Voltaje: Un robot suele tener varios componentes que operan a diferentes voltajes (ej. 5V para la lógica, 12V para los motores). Los reguladores permiten crear "rieles" de voltaje específicos a partir de una única fuente de alimentación, simplificando el diseño del sistema de energía.
+- Los reguladores conmutados (switching) son preferidos en robots. Son mucho más eficientes que los lineales, ya que minimizan la energía que se pierde como calor. Esto significa que la batería del robot durará más tiempo, aumentando su autonomía operativa.
+- Engranajes reductores: Un sistema de engranajes que reduce la velocidad del motor pero aumenta su torque (fuerza de giro), permitiendo movimientos más controlados y con mayor fuerza.Pueden ser reductores (buck) para bajar el voltaje de la batería (ej. de 12V a 5V para la Pi) o incluso elevadores (boost) si un componente necesita un voltaje mayor que el de la batería
+- Eficiencia Energética (para Robots Autónomos): En robótica, la eficiencia es fundamental para la autonomía.
+  
+El Regulador de Voltaje Electrónico es indispensable para el robot porque asegura una alimentación eléctrica constante y estable a todos sus componentes. Esto es clave para proteger la electrónica sensible (motores) de daños por variaciones de voltaje, garantiza el rendimiento óptimo y fiable de motores y sensores, y maximiza la autonomía del robot al mejorar la eficiencia energética. En esencia, es el guardián que mantiene el sistema eléctrico del robot funcionando de forma segura y eficaz.
+
+ ![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/servomotor.jpg)
+
 
