@@ -29,7 +29,7 @@
 
  **_Características_**
 
-- Control del sentido de giro: Permite invertir la polaridad del voltaje aplicado a un motor DC, lo que le permite girar hacia adelante o hacia atrás. Es su función esencial.
+- Control del sentido de giro: Permite invertir la polaridad del voltaje aplicado a un motor , lo que le permite girar hacia adelante o hacia atrás. Es su función esencial.
 - Control de velocidad: Al integrar una señal de Modulación por Ancho de Pulso (PWM), puede variar la velocidad del motor de manera eficiente.
 - Capacidad de corriente y voltaje: Cada puente H está diseñado para manejar un rango específico de corriente y voltaje, crucial para que coincida con los requisitos del motor y evitar daños.
 - Protecciones integradas: Muchos puentes H comerciales (en circuitos integrados) incluyen protecciones contra sobrecorriente, cortocircuitos y sobrecalentamiento, aumentando la seguridad y durabilidad.
