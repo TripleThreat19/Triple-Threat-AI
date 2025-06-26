@@ -36,6 +36,21 @@ Este Repositorio reúne toda la documentación técnica del proyecto Orlando, de
 
  ![Rasberry Pi 5](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/raspberry-pi-5.jpg)
 
+ **Puente H**
+
+ Un puente H, en electrónica, es un circuito que permite invertir la polaridad de la tensión aplicada a una carga, generalmente un motor de corriente continua. Esto se logra mediante la disposición de cuatro interruptores (generalmente transistores o relés) que permiten que la corriente fluya en dos direcciones opuestas a través de la carga, lo que a su vez controla el sentido de giro del motor. 
+
+- Control del sentido de giro: Permite invertir la polaridad del voltaje aplicado a un motor DC, lo que le permite girar hacia adelante o hacia atrás. Es su función esencial.
+- Control de velocidad: Al integrar una señal de Modulación por Ancho de Pulso (PWM), puede variar la velocidad del motor de manera eficiente.
+- Capacidad de corriente y voltaje: Cada puente H está diseñado para manejar un rango específico de corriente y voltaje, crucial para que coincida con los requisitos del motor y evitar daños.
+- Protecciones integradas: Muchos puentes H comerciales (en circuitos integrados) incluyen protecciones contra sobrecorriente, cortocircuitos y sobrecalentamiento, aumentando la seguridad y durabilidad.
+- Compatibilidad con microcontroladores: Son fácilmente controlables por microcontroladores como la Raspberry Pi o Arduino, simplificando la lógica de control del motor.
+- Aislamiento y protección del microcontrolador: El puente H actúa como una interfaz de potencia entre el microcontrolador (que opera con bajos voltajes y corrientes) y el motor (que consume mucha más potencia). Esto protege los componentes de control sensibles de las altas corrientes, voltajes y ruidos generados por el motor.
+
+El Puente H es fundamental para nuestro robot porque permite el control total de los motores: puede cambiar el sentido de giro (adelante/atrás) y, con PWM, controlar la velocidad con precisión. Además, actúa como un escudo protector para nuestra Raspberry Pi, aislando los componentes sensibles del motor y garantizando la fiabilidad y seguridad del sistema.
+
+ ![Puente H](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/raspberry-pi-5.jpg)
+
 
  
 
