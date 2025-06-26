@@ -9,11 +9,32 @@ Este Repositorio reúne toda la documentación técnica del proyecto Orlando, de
 
 # COMPONENTES DEL VEHICULO
 
+# Triple-Threat
+Categoría Futuros Ingenieros 
+
+# DIARIO DE INGIENERIA/DOCUMENTO
+
+Este Repositorio reúne toda la documentación técnica del proyecto Orlando, desarrollado por el equipo **_Triple Threat_** para la categoría Futuros Ingenieros de la WRO 2025. Aquí se detallan el diseño del vehículo,la programación del sistema de control, la selección de componentes y sensores, así como la estructura del cableado empleada para su funcionamiento.Cada sección refleja el esfuerzo, la dedicación y el compromiso que hemos puesto como equipo en este desafío. Este proyecto no solo representa una solución técnica a un problema propuesto, sino también el resultado de muchas horas de trabajo en equipo, investigación, pruebas constantes y mejora continua, motivados por nuestra pasión por la robótica y el aprendizaje colaborativo.A través de este trabajo, buscamos no solo destacar en la competencia, sino también inspirar a otros jóvenes a explorar el mundo de la ingeniería con creatividad, disciplina y entusiasmo.
+
+# FACTOR DE INGENIERIA/DISEÑO DEL PROTOTIPO
+
+# COMPONENTES DEL VEHICULO
+
+**Rasberry Pi 5**
+
+ La misma Raspberry Pi Foundation la define como una PC de bajo coste con el tamaño de una tarjeta de crédito que se conecta a un monitor o TV, utilizándose con un teclado y ratón. Dando igual la edad, permite explorar el mundo de la informática y aprender lenguajes de programación Scratch y Python.
+
+ Con el notable salto en rendimiento de la Raspberry Pi 5, gracias a su potente CPU Broadcom BCM2712 Quad-core Arm Cortex-A76 de 2.4 GHz y una GPU VideoCore VII mejorada, esta placa se convierte en el cerebro ideal para nuestro robot. La disponibilidad de hasta 8GB de RAM LPDDR4X-4267 nos asegura la capacidad de procesamiento necesaria para tareas complejas. Además, su conectividad avanzada con Wi-Fi 5 de doble banda, Bluetooth 5.0 y Gigabit Ethernet nos permitirá una comunicación fluida. La interfaz PCIe 2.0 x1 abre la puerta a un almacenamiento SSD ultrarrápido para el sistema operativo y los datos del robot, mientras que los dos transceptores MIPI de 4 carriles nos brindarán la flexibilidad para integrar múltiples cámaras o pantallas, esenciales para la visión y la interacción. Finalmente, el RTC y el conector de ventilador PWM garantizan la estabilidad y el funcionamiento continuo, haciendo de la Raspberry Pi 5 la elección perfecta para potenciar las capacidades de nuestro proyecto robótico.
+
+ ![Logo del proyecto](images/logo.png)
+ 
+
 # GESTIÓN DE LA POTENCIA Y LOS SENTIDOS 
 
 # GESTION DE MOVILIDAD 
 
 # ESTRATEGIAS PLANTEADAS PARA RESOLVER LOS RETOS 
+
 
 
 
