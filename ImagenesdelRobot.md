@@ -7,7 +7,7 @@ A continuación, se presentan las figuras que ilustran el prototipo de nuestro r
 
 ![Abajo](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/motor%20codificador%20optico%20Makeblock%20180.jpg)
 
-![Derecha](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/motor%20codificador%20optico%20Makeblock%20180.jpg)
+![Derecha](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Fotos%20deL%20Robot/Derecha.jpg)
 
 ![Izquierda](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Componentes%20Electronicos/motor%20codificador%20optico%20Makeblock%20180.jpg)
 
