@@ -1,7 +1,4 @@
 Detección de Objetos y Límites de Pista 🤖
----
-
-Este repositorio profundiza en la implementación de sistemas de percepción para vehículos robóticos autónomos. Nos enfocamos específicamente en dos pilares fundamentales para la navegación: la detección de objetos y el reconocimiento de los límites de la pista.
 
 ----
 
