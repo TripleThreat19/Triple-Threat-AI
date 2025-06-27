@@ -44,7 +44,7 @@ Nuestro chasis ha sido meticulosamente diseñado para una distribución específ
 
 ![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2010.jpg)
 
-* **Motor (con reductor):** Se ubica y fija en la parte trasera del chasis. Esta posición estratégica ayuda a concentrar el peso, optimizando la tracción y el balance general del robot.
+* **Motor:** Se ubica y fija en la parte trasera del chasis. Esta posición estratégica ayuda a concentrar el peso, optimizando la tracción y el balance general del robot.
 
 * **Baterías (Pilas):** Se colocan centralmente en el chasis y se aseguran mediante tornillos. Esta disposición es crucial para lograr una distribución equilibrada del peso, lo que mejora significativamente la estabilidad y la maniobrabilidad del vehículo.
 
@@ -52,6 +52,7 @@ Nuestro chasis ha sido meticulosamente diseñado para una distribución específ
 
 * **Puente H:** Este componente clave se colocará lo más próximo al motor posible. Esta cercanía minimiza la longitud del cableado, lo que reduce las pérdidas de energía y optimiza el control de dirección y velocidad del motor.
 
+* **Servomotor: Este componente se ubicará en la parte delantera del chasis. Su función principal es controlar el mecanismo de dirección de las ruedas delanteras, permitiendo al robot cambiar de trayectoria con precisión
 ---
 
 ### 💡 Componentes del Vehículo
