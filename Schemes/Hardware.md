@@ -34,7 +34,27 @@ El montaje de este subsistema se concibe en una secuencia lógica que asegura la
 
 ---
 
-### 💡 Componentes Clave del Vehículo
+# 🤖 Distribución de Componentes en el Chasis del Robot ⚙️
+
+Nuestro chasis ha sido meticulosamente diseñado para una distribución específica de componentes, buscando optimizar el centro de gravedad y facilitar el proceso de montaje. A continuación, detallamos la ubicación estratégica de los elementos principales:
+
+---
+
+### Colocación de Componentes Clave en la Primera Placa:
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Armado%20del%20Vehiculo/imagen%202.png)
+
+* **Motor (con reductor):** Se ubica y fija en la parte trasera del chasis. Esta posición estratégica ayuda a concentrar el peso, optimizando la tracción y el balance general del robot.
+
+* **Baterías (Pilas):** Se colocan centralmente en el chasis y se aseguran mediante tornillos. Esta disposición es crucial para lograr una distribución equilibrada del peso, lo que mejora significativamente la estabilidad y la maniobrabilidad del vehículo.
+
+* **Regulador de Voltaje (Regulador):** Aunque no es visible en la disposición general, se situará típicamente cerca de las baterías. Su función es regular el voltaje de entrada para alimentar de forma estable y segura el resto de la electrónica de control del robot.
+
+* **Puente H:** Este componente clave se colocará lo más próximo al motor posible. Esta cercanía minimiza la longitud del cableado, lo que reduce las pérdidas de energía y optimiza el control de dirección y velocidad del motor.
+
+---
+
+### 💡 Componentes del Vehículo
 
 Hemos seleccionado cuidadosamente cada componente para asegurar el máximo rendimiento y fiabilidad de nuestro robot. A continuación, detallamos los elementos esenciales que dan vida a nuestro proyecto.
 
