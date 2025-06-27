@@ -6,7 +6,7 @@ A continuación, se presentan las figuras que ilustran el prototipo de nuestro r
 
 # *Parte de Arriba* 
 
-![Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/V-Fotos/Abajo.jpg)
+![Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/V-Fotos/Arriba%20.jpg)
 
 ---
 
