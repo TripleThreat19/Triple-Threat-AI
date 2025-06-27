@@ -8,12 +8,11 @@ A continuación, se presentan las figuras que ilustran el prototipo de nuestro r
 
 ![Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/V-Fotos/Abajo.jpg)
 
-
-
 ---
 
 # *Parte de abajo*
-[Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
+
+![Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/V-Fotos/Abajo.jpg)
 
 ---
 
