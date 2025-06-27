@@ -67,7 +67,7 @@ Estos componentes vitales para la inteligencia y operación del robot se alojar�
 
 ---
 
-![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2010.jpg)
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2011.jpg))
 
 
 Soporte Frontal Vertical (Cámara y Módulo): Esta estructura, parte del segundo piso o conectada a él, está diseñada específicamente para montar la cámara y su módulo adicional en la parte frontal elevada. Su posición estratégica garantiza un campo de visión despejado y alto, crucial para tareas como la detección de obstáculos, navegación y mapeo ambiental.
