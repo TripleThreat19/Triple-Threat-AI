@@ -62,7 +62,7 @@ Hemos identificado los siguientes desafíos técnicos principales que nuestro ve
 
 ---
 
-## Nuestro Enfoque
+## 🎯  Nuestro Enfoque
 
 Nuestro proyecto busca desarrollar un vehículo autónomo que integre **percepción avanzada del entorno, toma de decisiones dinámica y control de movimiento de alta precisión**. Para lograr esto, utilizaremos una **cámara Raspberry Pi AI** para el procesamiento visual y la detección de elementos clave en la pista, conectada a una **Raspberry Pi** que actuará como el cerebro principal para la lógica de control, la planificación de trayectoria y la ejecución de maniobras. Esta combinación nos permitirá abordar eficazmente los desafíos de navegación, adaptación a obstáculos variables y la maniobra final de estacionamiento, con el objetivo de lograr los mejores tiempos en la competición.
 
