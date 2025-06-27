@@ -42,7 +42,7 @@ Nuestro chasis ha sido meticulosamente diseñado para una distribución específ
 
 ### Colocación de Componentes Clave en la Primera Placa:
 
-![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Armado%20del%20Vehiculo/imagen%202.png)
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2010.jpg)
 
 * **Motor (con reductor):** Se ubica y fija en la parte trasera del chasis. Esta posición estratégica ayuda a concentrar el peso, optimizando la tracción y el balance general del robot.
 
