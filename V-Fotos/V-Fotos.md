@@ -4,33 +4,33 @@ A continuación, se presentan las figuras que ilustran el prototipo de nuestro r
 
 ---
 
-# Parte de Arriba 
+# *Parte de Arriba* 
 [Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 
 ---
 
-# Parte de abajo
+# *Parte de abajo*
 [Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 
 ---
 
-# Parte de Adelante 
+# *Parte de Adelante* 
 [Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 
 ---
 
-# Parte de Atras
+# *Parte de Atras*
 [Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 
 ---
 
-# Parte Dreceha 
+# *Parte Dreceha*
 [Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 
 
 ---
 
-# Parte Izquierda
+# *Parte Izquierda*
 [Logo del Equipo Triple Threat](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)
 
 
