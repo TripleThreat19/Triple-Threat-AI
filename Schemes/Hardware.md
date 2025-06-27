@@ -145,3 +145,40 @@ El **Motor Codificador Óptico Makeblock 180** es un tipo de motor DC (corriente
 El **Motor Codificador Óptico Makeblock 180** es fundamental para nuestro robot porque ofrece un **control de movimiento preciso y con retroalimentación**. Su codificador óptico permite a la Raspberry Pi 5 conocer exactamente la posición, velocidad y distancia recorrida, lo cual es indispensable para una **navegación autónoma exacta, control de movimiento fino** (giros y paradas precisas), detección de bloqueos y una **mayor fiabilidad y repetibilidad** en sus desplazamientos. Transforma al robot en un sistema de **navegación inteligente y confiable**.
 
 ![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/motor%20codificador%20optico%20Makeblock%20180.jpg)
+
+De acuerdo, aquí tienes el texto formateado de manera más estética y estructurada, como se vería en un repositorio de GitHub, usando Markdown para una mejor presentación visual. Incluyo un título principal y subtítulos para organizar la información.
+
+---
+
+# 🤖 Sistema de Rueda y Eje para Nuestro Robot ⚙️
+
+¡Bienvenidos a la sección de hardware de nuestro proyecto! Aquí explicaremos cómo se ensamblan las piezas clave para el movimiento de nuestro robot. La imagen de arriba muestra un "despiece" de los componentes esenciales que conforman una de las unidades de rueda.
+
+---
+
+### Visión General del Ensamblaje
+
+Este sistema está diseñado para proporcionar una rotación fluida y robusta, fundamental para la locomoción de nuestro robot. Cada componente juega un papel crucial en la durabilidad y eficiencia del movimiento.
+
+---
+
+### Desglose del Proceso de Montaje
+
+El montaje de este subsistema se concibe en una secuencia lógica que asegura la correcta funcionalidad y alineación de las partes:
+
+1.  **Eje y Rodamiento:**
+    El punto de partida es el **eje**, un elemento central sobre el cual se montará el **rodamiento**. Este rodamiento es una pieza ingenieril clave, cuya función principal es minimizar la fricción, permitiendo que el eje (y, por ende, la rueda) gire con la mayor suavidad posible y con un mínimo desgaste.
+
+2.  **Soporte del Rodamiento:**
+    Una vez que el rodamiento está posicionado en el eje, ambos se alojan dentro del **soporte de rodamiento**. Este soporte se compone de dos mitades que se unen, encapsulando y asegurando el rodamiento en su lugar. La unión de estas dos secciones se logra mediante el uso de **tornillos y tuercas más pequeños**, garantizando que el rodamiento quede firmemente contenido, pero con libertad para girar sobre el eje.
+
+3.  **Fijación de la Rueda:**
+    Con el eje y el conjunto de rodamiento/soporte listos, la **rueda** se desliza sobre el extremo libre del eje. Para asegurar que la rueda no se desplace ni se suelte durante el funcionamiento de nuestro robot, se utiliza una **tuerca adicional** que se rosca firmemente en el extremo del eje, fijando la rueda en su posición adecuada.
+
+4.  **Integración en el Chasis del Robot:**
+    Finalmente, este ensamblaje completo (compuesto por la rueda, el eje, el rodamiento y su soporte) se integra directamente en la estructura principal de nuestro robot. El diseño del **soporte de rodamiento** incluye puntos de montaje que permiten su fijación segura al chasis o a los brazos de suspensión, si los tuviera. Esta integración no solo proporciona el anclaje físico, sino que también establece el punto de pivote exacto para la rotación de la rueda, siendo esencial para la dinámica de movimiento de nuestro robot.
+
+---
+
+Esperamos que esta descripción aclare cómo se concibe y ensambla este vital componente de nuestro proyecto. ¡Seguimos adelante con la construcción!
+
