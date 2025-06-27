@@ -8,7 +8,8 @@
 
 ---
 
-🚀 Presentación del Equipo
+## 🚀 Presentación del Equipo
+
 Desde que tenemos memoria, la robótica ha sido nuestra pasión. Somos Triple Threat, trillizos: Carlos, nuestro experto en programación; Valeria, la encargada del diario de ingeniería; y Valentina, la ingeniera mecánica detrás de cada diseño.
 
 Hace dos años, nuestra aventura en la WRO comenzó en la categoría de Deportes Robóticos. No fue cualquier partido, era un tenis doble con una particularidad que lo hacía desafiante: cuatro pelotas en cada lado, una pared en contra y una rampa que agregaba una capa extra de complejidad al campo de juego. Fue un reto estratégico donde aprendimos la importancia de cada detalle, la precisión en el movimiento y la presión del tiempo. El año pasado, la emoción se multiplicó cuando, con mucho esfuerzo y dedicación, logramos clasificar para la etapa internacional en Turquía. Esa experiencia fue inolvidable: conocer a equipos de todo el mundo, sumergirnos en diferentes culturas y, sobre todo, poner a prueba nuestras habilidades en un escenario global.
