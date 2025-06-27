@@ -55,6 +55,29 @@ Nuestro chasis ha sido meticulosamente diseñado para una distribución específ
 * **Servomotor: Este componente se ubicará en la parte delantera del chasis. Su función principal es controlar el mecanismo de dirección de las ruedas delanteras, permitiendo al robot cambiar de trayectoria con precisión
 ---
 
+
+🤖 Ensamblaje del Robot: Distribución de Componentes en el Chasis ⚙️
+Nuestro chasis ha sido meticulosamente diseñado para una distribución estratégica de componentes, buscando optimizar el centro de gravedad, la funcionalidad y la facilidad de montaje. A continuación, detallamos la ubicación pensada para los elementos clave:
+
+---
+
+Disposición de Componentes de Percepción y Procesamiento (Segundo Piso):
+
+Estos componentes vitales para la inteligencia y operación del robot se alojarán en una placa superior o "segundo piso", que se montará sobre el chasis principal, aprovechando estructuras como las mostradas en "Elemento 11.jpg".
+
+---
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2010.jpg)
+
+
+Soporte Frontal Vertical (Cámara y Módulo): Esta estructura, parte del segundo piso o conectada a él, está diseñada específicamente para montar la cámara y su módulo adicional en la parte frontal elevada. Su posición estratégica garantiza un campo de visión despejado y alto, crucial para tareas como la detección de obstáculos, navegación y mapeo ambiental.
+
+Espacio Inferior del Segundo Piso (Powerbank y Raspberry Pi): En la zona inferior de este segundo nivel (o sobre la superficie de esta placa superior) se destinará el espacio para el Powerbank y la Raspberry Pi. Esta ubicación es fundamental para mantener el "cerebro" del robot (Raspberry Pi) y su fuente de energía suplementaria (Powerbank) accesibles, a la vez que se optimiza el cableado y se minimiza la altura total, contribuyendo al centro de gravedad general del conjunto.
+
+---
+
+
+
 ### 💡 Componentes del Vehículo
 
 Hemos seleccionado cuidadosamente cada componente para asegurar el máximo rendimiento y fiabilidad de nuestro robot. A continuación, detallamos los elementos esenciales que dan vida a nuestro proyecto.
