@@ -1,7 +1,7 @@
 Detección de Objetos y Límites de Pista 🤖
 
 ----
-![Logo de Python](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Logo%20del%20Equipo/Logo%20del%20Equipo.jpg)](https://github.com/TripleThreat19/Triple-Threat-AI)
+![Logo de Python](https://github.com/TripleThreat19/Triple-Threat-AI](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/SRC/Python.png)
 
 Para capacitar a nuestro robot con la habilidad de "ver" su entorno, integramos un conjunto de sensores clave. Si bien los sensores de proximidad (como los ultrasónicos o infrarrojos) son cruciales para detectar obstáculos cercanos y medir distancias, el componente central de nuestra visión es la Cámara Raspberry Pi AI.
 
