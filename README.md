@@ -20,6 +20,44 @@ Con este trabajo, nuestro objetivo es doble: no solo buscamos destacar en la com
 
 ---
 
+---
+
+# Problema Identificado: Vehículo Autónomo para Competición "Time Attack" (WRO Futuros Ingenieros)
+
+## Desafío del Reto
+
+El desafío de la **World Robot Olympiad (WRO)** en la categoría de **Futuros Ingenieros** para esta temporada se enfoca en **vehículos autónomos para carreras tipo "Time Attack"**. El objetivo es diseñar, construir y programar un robot capaz de navegar una pista, superar obstáculos específicos y realizar un estacionamiento en paralelo, todo ello buscando el mejor tiempo posible.
+
+## Problemas Clave a Resolver
+
+Hemos identificado los siguientes desafíos técnicos principales que nuestro vehículo debe superar:
+
+### 1. Navegación y Control de Alta Velocidad
+* **Seguimiento de Pista Preciso:** El robot necesita un sistema robusto para mantenerse dentro de la pista y seguir la línea con gran exactitud durante múltiples vueltas, optimizando la trayectoria para la velocidad.
+* **Control Dinámico de Velocidad:** Mantener la máxima velocidad posible sin perder el control en curvas o secciones complejas es crucial para el "Time Attack".
+
+### 2. Adaptación a Obstáculos Variables
+
+#### Desafío de Muros Interiores Aleatorios:
+* **Detección de Muros en Tiempo Real:** El robot debe identificar la posición cambiante de los muros en la pista sin depender de un mapa predefinido.
+* **Evasión Eficiente:** Desarrollar algoritmos que permitan al robot rodear los muros rápidamente y sin colisionar, recalculando su ruta sobre la marcha.
+
+#### Desafío de Señales de Tráfico (Pilares Verdes/Rojos):
+* **Reconocimiento Visual de Señales:** Implementar un sistema fiable para detectar y diferenciar los pilares verdes (girar a la izquierda) y rojos (girar a la derecha).
+* **Decisión y Maniobra Basada en Señal:** El robot debe ajustar su posición en el carril según la señal detectada, ejecutando la maniobra con precisión para no desplazar los pilares.
+
+### 3. Maniobra de Estacionamiento en Paralelo
+* **Detección de Zona de Aparcamiento:** El robot necesita identificar el espacio de estacionamiento designado al finalizar las vueltas.
+* **Ejecución Precisa del Paralelo:** Realizar una secuencia compleja de movimientos coordinados para estacionar el vehículo correctamente en un espacio reducido.
+
+---
+
+## Nuestro Enfoque
+
+Nuestro proyecto busca desarrollar un vehículo autónomo que integre **percepción avanzada del entorno, toma de decisiones dinámica y control de movimiento de alta precisión**. Para lograr esto, utilizaremos una **cámara Raspberry Pi AI** para el procesamiento visual y la detección de elementos clave en la pista, conectada a una **Raspberry Pi** que actuará como el cerebro principal para la lógica de control, la planificación de trayectoria y la ejecución de maniobras. Esta combinación nos permitirá abordar eficazmente los desafíos de navegación, adaptación a obstáculos variables y la maniobra final de estacionamiento, con el objetivo de lograr los mejores tiempos en la competición.
+
+---
+
 ## 🛠️ Factor de Ingeniería / Diseño del Prototipo
 
 En esta sección, profundizamos en la conceptualización y materialización de nuestro prototipo, detallando las decisiones de diseño que lo hacen robusto y eficiente para los retos de la WRO 2025.
