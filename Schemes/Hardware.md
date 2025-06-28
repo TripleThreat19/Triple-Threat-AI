@@ -121,7 +121,7 @@ Estos componentes vitales para la inteligencia y operación del robot se alojar�
 
 Soporte Frontal Vertical (Cámara y Módulo): Esta estructura, parte del segundo piso o conectada a él, está diseñada específicamente para montar la cámara y su módulo adicional en la parte frontal elevada. Su posición estratégica garantiza un campo de visión despejado y alto, crucial para tareas como la detección de obstáculos, navegación y mapeo ambiental.
 
-Espacio Inferior del Segundo Piso (Powerbank y Raspberry Pi): En la zona inferior de este segundo nivel (o sobre la superficie de esta placa superior) se destinará el espacio para el Powerbank y la Raspberry Pi. Esta ubicación es fundamental para mantener el "cerebro" del robot (Raspberry Pi) y su fuente de energía suplementaria (Powerbank) accesibles, a la vez que se optimiza el cableado y se minimiza la altura total, contribuyendo al centro de gravedad general del conjunto.
+Espacio Inferior del Segundo Piso (Raspberry Pi y Puente H): En la zona inferior de este segundo nivel (o sobre la superficie de esta placa superior) se destinará el espacio para el Powerbank y la Raspberry Pi. Esta ubicación es fundamental para mantener el "cerebro" del robot (Raspberry Pi) y su fuente de energía suplementaria (Powerbank) accesibles, a la vez que se optimiza el cableado y se minimiza la altura total, contribuyendo al centro de gravedad general del conjunto.
 
 ---
 
@@ -212,24 +212,15 @@ La **Raspberry Pi AI Camera** es fundamental para nuestro robot porque permite l
 
 ![La Raspberry Pi AI Camera](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Camara%20Rasberry%20PI%205.jpg)
 
-#### 🔋 Power Bank PB-607
-
-El **Power Bank PB-607** es un cargador portátil o batería externa, fabricado por la marca Harvic. Está diseñado para recargar dispositivos electrónicos como teléfonos inteligentes, tabletas y otros gadgets cuando no tienes acceso a una toma de corriente.
-
----
-**_Características Clave:_**
-
-* **Capacidad:** 10,000mAh (miliamperios-hora). Esta es una capacidad común que permite varias cargas completas.
-* **Tipo de batería:** Polímero de Litio. Este tipo de batería es ligero, tiene un buen rendimiento y es más seguro que las antiguas baterías de iones de litio en algunos aspectos.
-* **Salida (Output):** 5V-2.1A. Esto indica la velocidad de carga para tus dispositivos. Un output de 2.1A es considerado una carga rápida para muchos dispositivos móviles.
-* **Puertos de salida:** Un puerto USB estándar (tipo A) y un puerto Tipo-C con capacidad de carga rápida.
-* **Cables incorporados:** Algunos modelos del PB-607 incluyen cables integrados, típicamente uno para dispositivos iPhone (Lightning) y otro Tipo-C, lo que es muy conveniente ya que no necesitas llevar cables adicionales.
+(AC) convencionales por su capacidad de **controlar con precisión su posición angular, velocidad y, en algunos casos, su aceleración**. Piensa en él como un motor que no solo gira, sino que sabe exactamente dónde está y puede ir a una posición específica y mantenerla, incluso si hay una fuerza externa que intenta moverlo.
 
 ---
 
-Un **servomotor** es un tipo de motor especial que se diferencia de los motores de corriente continua (DC) o alterna (AC) convencionales por su capacidad de **controlar con precisión su posición angular, velocidad y, en algunos casos, su aceleración**. Piensa en él como un motor que no solo gira, sino que sabe exactamente dónde está y puede ir a una posición específica y mantenerla, incluso si hay una fuerza externa que intenta moverlo.
+Servomotor
+Un servomotor es un tipo de motor especial que se diferencia de los motores de corriente continua (DC) o alterna (AC) convencionales por su capacidad de controlar con precisión su posición angular, velocidad y, en algunos casos, su aceleración. Piensa en él como un motor que no solo gira, sino que sabe exactamente dónde está y puede ir a una posición específica y mantenerla, incluso si hay una fuerza externa que intenta moverlo.
 
 ---
+
 **_Características Principales:_**
 
 * **Control de Posición Preciso:** Esta es su característica principal. A diferencia de un motor DC que gira libremente cuando se le aplica voltaje, un servomotor puede ser instruido para moverse a un ángulo específico (por ejemplo, 45 grados, 90 grados, etc.) y mantenerse allí.
@@ -269,6 +260,7 @@ El **Regulador de Voltaje Electrónico** es indispensable para el robot porque a
 En esencia, el regulador es fundamental para la **fiabilidad y la prolongación de la vida útil** de los componentes eléctricos del robot.
 
 ![Regulador de Voltaje]
+
 
 #### ⚙️ Motor Codificador Óptico Makeblock 180
 
