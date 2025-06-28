@@ -1,3 +1,59 @@
+# MECANICA Y DIRECIÓN DEL ROBOT/VEHICULO
+
+Este repositorio contiene la descripción del sistema mecánico y de dirección de un robot móvil diseñado a partir de un **modelo 3D**. Su configuración con **ruedas delanteras direccionales** le proporciona una excelente maniobrabilidad y control, siendo ideal para aplicaciones que demandan precisión en el movimiento.
+
+---
+
+## 1. Mecánica del Robot
+
+El diseño mecánico se enfoca en una estructura **robusta y ligera**, optimizada para la distribución del peso y la integración de todos los componentes electrónicos y motrices.
+
+### 1.1. Componentes Clave
+
+* **Chasis**: Es la base del robot. Su diseño está pensado para soportar todos los componentes y asegurar la **rigidez estructural**. La forma y el material (generalmente polímeros resistentes o aleaciones ligeras, según el **modelo 3D**) se seleccionan según la aplicación específica del robot.
+
+* **Tren de Rodaje**: Se compone de un mínimo de cuatro ruedas. Las **ruedas delanteras** son las encargadas de la **dirección**, mientras que las **ruedas traseras** actúan como propulsoras, brindando el empuje necesario para el movimiento. En algunos diseños, las ruedas traseras pueden ser fijas o incluir un sistema de suspensión independiente para mejorar la tracción en superficies irregulares.
+
+* **Sistema de Suspensión (Opcional)**: Dependiendo del entorno operativo del robot, el **modelo 3D** podría incorporar un sistema de suspensión. Su función es absorber impactos y asegurar que las ruedas mantengan el contacto con el suelo, lo que mejora la **estabilidad** y la **tracción**.
+
+* **Compartimentos Internos**: El **modelo 3D** prevé y define espacios específicos para alojar la batería, la tarjeta controladora (como Arduino, Raspberry Pi, etc.), los controladores de motor (drivers), y cualquier otro sensor o componente electrónico que el robot necesite para su funcionamiento.
+
+---
+
+## 2. Sistema de Dirección
+
+El sistema de dirección es fundamental para la **maniobrabilidad** del robot, imitando el principio de un automóvil. Se basa en el movimiento angular de las **ruedas delanteras**.
+
+### 2.1. Componentes Principales
+
+* **Ruedas Delanteras Direccionales**: Estas ruedas giran alrededor de un eje vertical (similar al pivote de dirección de un coche) para modificar la trayectoria del robot. Ambas **ruedas delanteras direccionales** están interconectadas y se mueven en un ángulo coordinado gracias a un **mecanismo de dirección**.
+
+* **Mecanismo de Dirección**: Este sistema, detallado en el **modelo 3D**, puede variar. Puede ser una simple barra de acoplamiento que conecta ambas ruedas delanteras, o un sistema más complejo tipo **Ackerman**. El **mecanismo de Ackerman** es el más común y eficiente, ya que permite que las ruedas interiores y exteriores giren en ángulos ligeramente diferentes durante un giro, lo que minimiza el deslizamiento y el desgaste de los neumáticos.
+
+* **Servomotor de Dirección**: Un servomotor de alta precisión (o dos, uno por cada rueda en ciertos diseños) es el responsable de ejecutar el movimiento angular de las **ruedas delanteras direccionales**. Este motor recibe las señales de control de la tarjeta controladora y las traduce en el ángulo de giro deseado. La correcta ubicación y el acoplamiento de este servomotor con el mecanismo de dirección son aspectos críticos en el diseño **3D** para garantizar un movimiento fluido y sin holguras.
+
+* **Controlador de Dirección**: La tarjeta controladora del robot (por ejemplo, un microcontrolador programado con el algoritmo de control) es la encargada de enviar las señales al servomotor para ajustar el ángulo de las **ruedas delanteras direccionales**. Este controlador puede recibir entradas de un joystick, un software de navegación, o diversos sensores para determinar la dirección que se desea tomar.
+
+---
+
+## 3. Funcionamiento General
+
+Para que el robot pueda moverse y girar eficientemente, el sistema opera de la siguiente manera:
+
+* **Propulsión**: Los motores acoplados a las **ruedas traseras** (o un motor diferencial para ambas) giran para impulsar el robot hacia adelante o hacia atrás. La velocidad se regula mediante la potencia suministrada a estos motores.
+
+* **Dirección**: Para iniciar un giro, la tarjeta controladora envía una señal al **servomotor de dirección**. El servomotor, a su vez, activa el mecanismo de dirección, lo que provoca el cambio en el ángulo de las **ruedas delanteras direccionales**. El grado de giro de estas ruedas determina directamente el radio de giro del robot.
+
+* **Coordinación**: La clave para un movimiento óptimo reside en la **coordinación** entre la velocidad de las ruedas propulsoras y el ángulo de las **ruedas delanteras direccionales**. Para ejecutar giros cerrados, las ruedas delanteras se angulan más, y la velocidad de las ruedas traseras puede ajustarse para facilitar la maniobra y asegurar un giro suave y controlado.
+
+---
+
+Este diseño, meticulosamente modelado en **3D**, permite una visualización detallada y una optimización exhaustiva de la ergonomía, la resistencia y la funcionalidad del robot antes de proceder con su construcción física. Esto asegura un rendimiento óptimo en todos los aspectos de su mecánica y dirección.
+
+
+
+
+
 ---
 
 # 🤖 Sistema de Rueda y Eje para Nuestro Robot ⚙️
