@@ -142,6 +142,8 @@ Nuestro sistema electrónico, que impulsa y controla cada movimiento de nuestro 
   
 A continuación, se presentará el Diagrama de Cableado que ilustra cómo estos componentes se interconectan para funcionar en armonía.
 
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Armado%20del%20Vehiculo/imagen%202.png)
+
 ---
 
 ### 💡 Componentes del Vehículo
