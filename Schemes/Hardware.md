@@ -138,11 +138,11 @@ Nuestro sistema electrónico, que impulsa y controla cada movimiento de nuestro 
 -	Regulador de Voltaje
 -	Baterías
 -	Switch
-- Power Bank
+
   
 A continuación, se presentará el Diagrama de Cableado que ilustra cómo estos componentes se interconectan para funcionar en armonía.
 
-![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Diagrama%20de%20Cableado%20.jpg)
+![Motor Codificador Optico Makeblock 180]
 
 ---
 
@@ -227,11 +227,6 @@ El **Power Bank PB-607** es un cargador portátil o batería externa, fabricado 
 
 ---
 
-El **Power Bank PB-607** es vital para nuestro robot porque le otorga **autonomía de operación** al ser una fuente de energía portátil y duradera de 10,000 mAh. Esta capacidad permite alimentar la Raspberry Pi 5, asegurando que el robot se mueva y funcione libremente sin necesidad de estar enchufado, lo cual es esencial para su movilidad y continuidad. Además, sus puertos USB y Tipo-C le permiten recargar otros componentes, manteniendo todo el sistema operativo y fiable.
-
-![Power Bank PB-607](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/PowerBank%20.jpg)
-#### ⚙️ Servomotor
-
 Un **servomotor** es un tipo de motor especial que se diferencia de los motores de corriente continua (DC) o alterna (AC) convencionales por su capacidad de **controlar con precisión su posición angular, velocidad y, en algunos casos, su aceleración**. Piensa en él como un motor que no solo gira, sino que sabe exactamente dónde está y puede ir a una posición específica y mantenerla, incluso si hay una fuerza externa que intenta moverlo.
 
 ---
@@ -273,7 +268,7 @@ El **Regulador de Voltaje Electrónico** es indispensable para el robot porque a
 
 En esencia, el regulador es fundamental para la **fiabilidad y la prolongación de la vida útil** de los componentes eléctricos del robot.
 
-![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Regulador%20de%20Voltaje.jpg)
+![Regulador de Voltaje]
 
 #### ⚙️ Motor Codificador Óptico Makeblock 180
 
