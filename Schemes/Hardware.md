@@ -49,6 +49,47 @@ Este diseño, meticulosamente modelado en **3D**, permite una visualización det
 
 ---
 
+# Gestión de Potencia y Control de Sentido del Vehiculo
+
+---
+
+Este documento detalla la estrategia de gestión de potencia y el sistema de control de sentido implementados en nuestro robot, utilizando una Raspberry Pi 5 y la Raspberry Pi AI Camera.
+
+1. Gestión de Potencia
+Asegurar un suministro de energía estable y eficiente es crucial para el rendimiento y la durabilidad de los componentes del robot.
+
+Baterías de Litio: La fuente de energía principal de nuestro robot son las baterías de litio. Las seleccionamos por su alta densidad energética y eficiencia, ya que proveen la energía necesaria para todos los sistemas. La capacidad y el voltaje específicos (por ejemplo, 3S LiPo, 11.1V) los elegimos según el consumo total estimado de los motores y la electrónica.
+
+Regulador de Voltaje (Buck Converter): Como la Raspberry Pi 5 y la Raspberry Pi AI Camera operan a 5V, y nuestras baterías de litio tienen un voltaje nominal más alto, un regulador de voltaje DC-DC (buck converter) es indispensable. Este componente reduce y estabiliza el voltaje de las baterías a los 5V requeridos, protegiendo la electrónica sensible de sobretensiones y fluctuaciones.
+
+Switch Principal: Un interruptor físico nos permite encender y apagar el robot de forma segura, controlando el flujo general de energía desde las baterías.
+
+2. Control de Sentidos (Movimiento y Percepción)
+La Raspberry Pi 5 actúa como el cerebro central, orquestando tanto el movimiento físico del robot como su capacidad para percibir e interpretar el entorno.
+
+Control del Movimiento (Actuadores):
+
+Motores Modificadores Ópticos Makeblock 180: Estos motores son los encargados de la propulsión del robot, conectados a las ruedas traseras. Incluyen codificadores ópticos que nos dan retroalimentación precisa sobre la velocidad y la distancia recorrida, información vital para la odometría y un control de movimiento exacto.
+
+Puente H: Funciona como la interfaz de potencia entre la Raspberry Pi 5 y los motores Makeblock 180. Permite a la Pi controlar la dirección y la velocidad de los motores (mediante PWM) con señales de bajo voltaje.
+
+Servomotor (Dirección): Este servomotor es crucial para el control preciso del ángulo de las ruedas delanteras directrices. La Raspberry Pi 5 le envía señales PWM para posicionar las ruedas con exactitud, permitiendo giros controlados y suaves.
+
+Percepción del Entorno (Sensores):
+
+Raspberry Pi AI Camera: Este es el principal sensor visual del robot. Conectada a la Raspberry Pi 5, nos permite implementar visión por computadora y algoritmos de Inteligencia Artificial. La cámara procesa el entorno para:
+
+Detección y Reconocimiento de Objetos: Identifica obstáculos, marcas o elementos clave en el entorno.
+
+Seguimiento de Trayectorias: Percibe líneas o caminos a seguir.
+
+Análisis Espacial: Comprende la profundidad y la disposición de los elementos.
+La potente Raspberry Pi 5 puede procesar estos datos de imagen en tiempo real, permitiendo al robot tomar decisiones informadas sobre su navegación y acciones.
+
+Software de Control: Todo el sistema lo gestiona el software que se ejecuta en la Raspberry Pi 5, desarrollado principalmente en Python. Este software integra las lecturas de los codificadores y la cámara, procesa la información y genera las señales de control para el Puente H y el servomotor, coordinando así todos los aspectos del movimiento y la interacción del robot con su entorno.
+
+---
+
 # 🤖 Sistema de Rueda y Eje para Nuestro Robot ⚙️
 
 ¡Bienvenidos a la sección de hardware de nuestro proyecto! Aquí explicaremos cómo se ensamblan las piezas clave para el movimiento de nuestro robot. La imagen de arriba muestra un "despiece" de los componentes esenciales que conforman una de las unidades de rueda.
