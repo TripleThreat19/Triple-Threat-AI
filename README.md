@@ -70,7 +70,11 @@ Nuestro proyecto busca desarrollar un vehículo autónomo que integre **percepci
 
 ## 🛠️ Factor de Ingeniería / Diseño del Prototipo
 
-En esta sección, profundizamos en la conceptualización y materialización de nuestro prototipo, detallando las decisiones de diseño que lo hacen robusto y eficiente para los retos de la WRO 2025.
+---
+
+El prototipo es un **robot móvil** con un diseño basado en un **modelo 3D**. Su principal característica es su sistema de **movilidad tipo automóvil**, utilizando **ruedas delanteras directrices** para una **dirección precisa** y ruedas traseras para la propulsión.
+
+Electrónicamente, es controlado por una **Raspberry Pi 5** con una **cámara AI** para la visión. Los movimientos son ejecutados por un **servomotor** para la dirección y **motores Makeblock 180** para el avance, gestionados por un **Puente H** y alimentados por **baterías** y un **regulador de voltaje**. Este conjunto busca ofrecer un **control exacto** y una **navegabilidad eficiente** para diversas tareas.
 
 ---
 
