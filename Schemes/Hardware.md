@@ -125,6 +125,22 @@ Espacio Inferior del Segundo Piso (Powerbank y Raspberry Pi): En la zona inferio
 
 ---
 
+# Electrónica
+
+---
+
+Nuestro sistema electrónico, que impulsa y controla cada movimiento de nuestro robot, está cuidadosamente ensamblado con los siguientes elementos clave:
+•	Raspberry Pi 5
+•	Raspberry Pi AI Camera
+•	Servomotor
+•	Motor Modificador Óptico Makeblock 180
+•	Puente H
+•	Regulador de Voltaje
+•	Baterías
+•	Switch
+•	Power Bank
+A continuación, se presentará el Diagrama de Cableado que ilustra cómo estos componentes se interconectan para funcionar en armonía.
+
 
 
 ### 💡 Componentes del Vehículo
