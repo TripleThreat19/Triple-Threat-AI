@@ -100,7 +100,7 @@ La **Raspberry Pi AI Camera** es fundamental para nuestro robot porque permite l
 
 ## ⚡ Gestión de la Potencia y los Sensores
 
-
+Nuestro robot gestiona su energía mediante baterías de litio que, a través de un regulador de voltaje, alimentan de forma estable la Raspberry Pi 5 y la Raspberry Pi AI Camera. Un simple switch enciende y apaga el sistema. Para el control del movimiento, la Raspberry Pi 5 se comunica con los motores Makeblock 180 (que tienen codificadores ópticos para precisión) a través de un Puente H, y dirige las ruedas delanteras directrices con un servomotor. La Raspberry Pi AI Camera actúa como el sensor visual principal, permitiendo a la Pi procesar el entorno con visión por computadora e inteligencia artificial, todo orquestado por software basado en Python para una navegación y operación autónoma.
 
 ---
 
