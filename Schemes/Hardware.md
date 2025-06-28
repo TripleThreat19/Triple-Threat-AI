@@ -24,8 +24,8 @@ El sistema de dirección es fundamental para la **maniobrabilidad** del robot, i
 
 * **Ruedas Delanteras Direccionales**: Estas ruedas giran alrededor de un eje vertical (similar al pivote de dirección de un coche) para modificar la trayectoria del robot. Ambas **ruedas delanteras direccionales** están interconectadas y se mueven en un ángulo coordinado gracias a un **mecanismo de dirección**.
 
-* **Mecanismo de Dirección**: Este sistema, detallado en el **modelo 3D**, puede variar. Puede ser una simple barra de acoplamiento que conecta ambas ruedas delanteras, o un sistema más complejo tipo **Ackerman**. El **mecanismo de Ackerman** es el más común y eficiente, ya que permite que las ruedas interiores y exteriores giren en ángulos ligeramente diferentes durante un giro, lo que minimiza el deslizamiento y el desgaste de los neumáticos.
-
+* **Mecanismo de Dirección**: Este sistema, detallado en el **modelo 3D**, es una simple barra de acoplamiento que conecta ambas ruedas delanteras
+  
 * **Servomotor**: Un servomotor de alta precisión, es el responsable de ejecutar el movimiento angular de las **ruedas delanteras direccionales**. Este motor recibe las señales de control de la tarjeta controladora (Rasberry PI) y las traduce en el ángulo de giro deseado. La correcta ubicación y el acoplamiento de este servomotor con el mecanismo de dirección son aspectos críticos en el diseño **3D** para garantizar un movimiento fluido y sin holguras.
 
 * **Rasberry PI 5**: La tarjeta controladora del robot Rasberry PI 5 es la encargada de enviar las señales al servomotor para ajustar el ángulo de las **ruedas delanteras direccionales**. Este controlador puede recibir entradas de la Camara Rasberry PI AI para determinar la dirección que se desea tomar.
