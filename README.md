@@ -96,13 +96,15 @@ La **Raspberry Pi AI Camera** es fundamental para nuestro robot porque permite l
 
 ## ⚡ Gestión de la Potencia y los Sensores
 
-Aquí se detalla cómo nuestro robot maneja la energía y utiliza sus diversos sensores para interactuar con el entorno y tomar decisiones informadas.
+
 
 ---
 
 ## 🚗 Gestión de Movilidad
 
-Exploramos los sistemas y mecanismos que permiten a nuestro robot desplazarse de manera eficiente y precisa en el campo de juego.
+Este robot, diseñado en 3D, se mueve como un coche: sus ruedas traseras lo impulsan y las ruedas delanteras directrices lo guían. Su diseño mecánico, detallado en el modelo 3D, busca ser robusto y ligero, con espacio para todos los componentes.
+
+La dirección es clave: un servomotor mueve las ruedas delanteras, controlando los giros mediante un mecanismo de dirección (tipo Ackerman). Un controlador coordina estos movimientos para lograr una maniobrabilidad precisa. En resumen, es un vehículo ágil, diseñado para el control exacto de su trayectoria..
 
 ---
 
