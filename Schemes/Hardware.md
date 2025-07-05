@@ -176,9 +176,10 @@ Nuestro sistema electrónico, que impulsa y controla cada movimiento de nuestro 
 -	Servomotor
 -	Motor Modificador Óptico Makeblock 180
 -	Puente H
--	2 Reguladores de Voltaje
+- Regulador de Voltaje
 -	Baterías
 -	Switch
+-	Power Bank 
 
   
 A continuación, se presentará el Diagrama de Cableado que ilustra cómo estos componentes se interconectan para funcionar en armonía.
@@ -300,7 +301,6 @@ El **Regulador de Voltaje Electrónico** es indispensable para el robot porque a
 
 En esencia, el regulador es fundamental para la **fiabilidad y la prolongación de la vida útil** de los componentes eléctricos del robot.
 
-![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Regulador%20de%20voltaje%20-%20copia.jpg)
 
 ![Regulador de Voltaje](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Regulador%20de%20voltaje%201.jpg)
 
