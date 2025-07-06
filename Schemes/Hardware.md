@@ -1,6 +1,6 @@
 # MECANICA Y DIRECIÓN DEL ROBOT/VEHICULO
 
-Este repositorio contiene la descripción del sistema mecánico y de dirección de un robot móvil diseñado a partir de un **modelo 3D**. Su configuración con **ruedas delanteras direccionales** le proporciona una excelente maniobrabilidad y control, siendo ideal para aplicaciones que demandan precisión en el movimiento.
+Este repositorio contiene la descripción del sistema mecánico y de dirección de un robot móvil diseñado a partir de un modelo 3D. Su configuración con ruedas delanteras direccionales le proporciona una excelente maniobrabilidad y control, siendo ideal para aplicaciones que demandan precisión en el movimiento.
 
 ---
 
@@ -46,6 +46,35 @@ Para que el robot pueda moverse y girar eficientemente, el sistema opera de la s
 
 Este diseño, meticulosamente modelado en **3D**, permite una visualización detallada y una optimización exhaustiva de la ergonomía, la resistencia y la funcionalidad del robot antes de proceder con su construcción física. Esto asegura un rendimiento óptimo en todos los aspectos de su mecánica y dirección.
 
+
+---
+
+## Debate Técnico sobre la Gestión de la Movilidad
+
+### 1. Selección e Implementación de Motores
+
+Para la propulsión del robot utilicé un motor DC con encoder, ya que me permite medir la velocidad angular y la posición de cada rueda, lo cual es clave para controlar con precisión la trayectoria. Este motor se seleccionó por su buen equilibrio entre par (torque) y velocidad para una plataforma de tamaño medio (~1.5 a 2 kg de peso total).
+
+El encoder facilita técnicas de control como PID, permitiendo mantener una velocidad constante incluso con cambios en el terreno o peso del robot.
+
+Para el sistema de dirección utilicé un servomotor de rotación limitada (180°). Este tipo de actuador me permite posicionar con precisión las ruedas delanteras en distintos ángulos, lo que se traduce en giros más suaves y exactos. Elegí un servo de alto torque (más de 10 kg·cm), suficiente para girar ambas ruedas mediante la barra de acoplamiento sin generar vibraciones o juego mecánico.
+
+### 2. Principios de Ingeniería Aplicados
+
+- Velocidad:Se estimó una velocidad objetivo de 0.5 a 1 m/s, adecuada para pruebas y recorridos controlados en escenarios de competencia.
+- Par (torque): Los motores deben superar la inercia del robot y el rozamiento del suelo. Para eso, se eligió un motor con un torque mínimo de 2 kg·cm en las ruedas traseras.
+- Potencia: La potencia eléctrica se dimensionó en función del consumo del motor DC (~6W por motor) y el servomotor (~2-3W en carga), permitiendo alimentar el sistema con una batería Li-ion de 7.4V.
+
+### 3. Diseño y Selección del Chasis
+
+El chasis fue diseñado en CAD 3D para ser liviano, resistente y fácil de imprimir en una impresora 3D FDM. Utilicé PLA reforzado como material principal por su buena relación rigidez/peso. La forma del chasis favorece la distribución de peso centrada, con espacio suficiente para el servo, motores, controlador y batería.
+
+### 4. Montaje de Componentes
+
+- El chasis impreso contiene ranuras específicas para montar los motores DC y sus reductoras usando tornillos M3.
+- El servo de dirección se acopla con dos tornillos a un soporte elevado en el centro del eje delantero.
+- Las ruedas delanteras están conectadas por una barra rígida impresa en 3D que transmite el movimiento angular del servo.
+- La Raspberry Pi 5, el controlador motor y la batería se fijan al chasis mediante bridas plásticas o tornillos autorroscantes en zonas ya previstas en el diseño.
 
 ---
 
