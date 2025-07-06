@@ -15,7 +15,7 @@ Paralelamente, para asegurar que el robot se mantenga dentro de su trayectoria, 
 
 ----
 
-![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/SRC/Python.png)
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Other/Diagrama%20de%20Flujo%20del%20Codigo%201%20Desafio%20Abierto%20.png)
 
 
 
