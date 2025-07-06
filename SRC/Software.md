@@ -11,4 +11,11 @@ La Cámara Raspberry Pi AI, en combinación con algoritmos de visión por comput
 
 Paralelamente, para asegurar que el robot se mantenga dentro de su trayectoria, utilizamos la Cámara Raspberry Pi AI para el reconocimiento de los bordes de la pista. A través del procesamiento de imágenes en Python, el sistema analiza las características visuales de la pista, incluyendo líneas y paredes, permitiendo al robot ajustar su dirección de forma continua para permanecer dentro de los límites predefinidos.
 
+# DIAGRAMAS DE LOS CODIGOS 
+
+----
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/SRC/Python.png)
+
+
 
