@@ -13,7 +13,15 @@ Paralelamente, para asegurar que el robot se mantenga dentro de su trayectoria, 
 
 # DIAGRAMAS DE LOS CODIGOS 
 
+
 ----
+
+Este documento presenta los diagramas de código de nuestro prototipo de robot, donde este esquivara las paredes tanto internas como externas de la pista. El objetivo es ofrecer una comprensión clara y estructurada de la arquitectura de software y la lógica de control que permiten al robot navegar de forma autónoma en entornos con obstáculos.
+
+Los diagramas visualizan el flujo de procesamiento de información, desde la percepción del entorno mediante los sensores hasta la toma de decisiones para evitar colisiones y la ejecución de movimientos por parte de los actuadores. Se detallará la interacción entre los módulos de detección de obstáculos, los algoritmos de navegación y la manipulación de los sistemas de propulsión y dirección.
+
+Esta representación gráfica facilitará el entendimiento de la secuencia lógica y las interdependencias entre los componentes de software, proporcionando una visión integral del funcionamiento autónomo del robot.
+
 
 ![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Other/Diagrama%20de%20Flujo%20del%20Codigo%201%20Desafio%20Abierto%20.png)
 
