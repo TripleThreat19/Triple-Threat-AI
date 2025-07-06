@@ -72,9 +72,221 @@ Nuestro proyecto busca desarrollar un vehículo autónomo que integre **percepci
 
 ---
 
-El prototipo es un **robot móvil** con un diseño basado en un **modelo 3D**. Su principal característica es su sistema de **movilidad tipo automóvil**, utilizando **ruedas delanteras directrices** para una **dirección precisa** y ruedas traseras para la propulsión.
+## 1. Mecánica del Robot
 
-Electrónicamente, es controlado por una **Raspberry Pi 5** con una **cámara AI** para la visión. Los movimientos son ejecutados por un **servomotor** para la dirección y **motores Makeblock 180** para el avance, gestionados por un **Puente H** y alimentados por **baterías** y un **regulador de voltaje**. Este conjunto busca ofrecer un **control exacto** y una **navegabilidad eficiente** para diversas tareas.
+El diseño mecánico se enfoca en una estructura **robusta y ligera**, optimizada para la distribución del peso y la integración de todos los componentes electrónicos y motrices.
+
+### 1.1. Componentes Clave
+
+* **Chasis**: Es la base del robot. Su diseño está pensado para soportar todos los componentes y asegurar la **rigidez estructural**. La forma y el material (generalmente polímeros resistentes o aleaciones ligeras, según el **modelo 3D**) se seleccionan según la aplicación específica del robot.
+
+* **Tren de Rodaje**: Se compone de un mínimo de cuatro ruedas. Las **ruedas delanteras** son las encargadas de la **dirección**, mientras que las **ruedas traseras** actúan como propulsoras, brindando el empuje necesario para el movimiento. 
+
+---
+
+## 2. Sistema de Dirección
+
+El sistema de dirección es fundamental para la **maniobrabilidad** del robot, imitando el principio de un automóvil. Se basa en el movimiento angular de las **ruedas delanteras**.
+
+### 2.1. Componentes Principales
+
+* **Ruedas Delanteras Direccionales**: Estas ruedas giran alrededor de un eje vertical (similar al pivote de dirección de un coche) para modificar la trayectoria del robot. Ambas **ruedas delanteras direccionales** están interconectadas y se mueven en un ángulo coordinado gracias a un **mecanismo de dirección**.
+
+* **Mecanismo de Dirección**: Este sistema, detallado en el **modelo 3D**, es una simple barra de acoplamiento que conecta ambas ruedas delanteras
+  
+* **Servomotor**: Un servomotor de alta precisión, es el responsable de ejecutar el movimiento angular de las **ruedas delanteras direccionales**. Este motor recibe las señales de control de la tarjeta controladora (Rasberry PI) y las traduce en el ángulo de giro deseado. La correcta ubicación y el acoplamiento de este servomotor con el mecanismo de dirección son aspectos críticos en el diseño **3D** para garantizar un movimiento fluido y sin holguras.
+
+* **Rasberry PI 5**: La tarjeta controladora del robot Rasberry PI 5 es la encargada de enviar las señales al servomotor para ajustar el ángulo de las **ruedas delanteras direccionales**. Este controlador puede recibir entradas de la Camara Rasberry PI AI para determinar la dirección que se desea tomar.
+
+---
+
+## 3. Funcionamiento General
+
+Para que el robot pueda moverse y girar eficientemente, el sistema opera de la siguiente manera:
+
+* **Propulsión**: Los motores acoplados a las **ruedas traseras** (o un motor diferencial para ambas) giran para impulsar el robot hacia adelante o hacia atrás. La velocidad se regula mediante la potencia suministrada a estos motores.
+
+* **Dirección**: Para iniciar un giro, la Rasberry PI 5 envía una señal al **servomotor**. El servomotor, a su vez, activa el mecanismo de dirección, lo que provoca el cambio en el ángulo de las **ruedas delanteras direccionales**. El grado de giro de estas ruedas determina directamente el radio de giro del robot.
+
+* **Coordinación**: La clave para un movimiento óptimo reside en la **coordinación** entre la velocidad de las ruedas propulsoras y el ángulo de las **ruedas delanteras direccionales**. Para ejecutar giros cerrados, las ruedas delanteras se angulan más, y la velocidad de las ruedas traseras puede ajustarse para facilitar la maniobra y asegurar un giro suave y controlado.
+
+---
+
+Este diseño, meticulosamente modelado en **3D**, permite una visualización detallada y una optimización exhaustiva de la ergonomía, la resistencia y la funcionalidad del robot antes de proceder con su construcción física. Esto asegura un rendimiento óptimo en todos los aspectos de su mecánica y dirección.
+
+
+---
+
+## Debate Técnico sobre la Gestión de la Movilidad
+
+### 1. Selección e Implementación de Motores
+
+Para la propulsión del robot utilicé un motor DC con encoder, ya que me permite medir la velocidad angular y la posición de cada rueda, lo cual es clave para controlar con precisión la trayectoria. Este motor se seleccionó por su buen equilibrio entre par (torque) y velocidad para una plataforma de tamaño medio (~1.5 a 2 kg de peso total).
+
+El encoder facilita técnicas de control como PID, permitiendo mantener una velocidad constante incluso con cambios en el terreno o peso del robot.
+
+Para el sistema de dirección utilicé un servomotor de rotación limitada (180°). Este tipo de actuador me permite posicionar con precisión las ruedas delanteras en distintos ángulos, lo que se traduce en giros más suaves y exactos. Elegí un servo de alto torque (más de 10 kg·cm), suficiente para girar ambas ruedas mediante la barra de acoplamiento sin generar vibraciones o juego mecánico.
+
+### 2. Principios de Ingeniería Aplicados
+
+- Velocidad:Se estimó una velocidad objetivo de 0.5 a 1 m/s, adecuada para pruebas y recorridos controlados en escenarios de competencia.
+- Par (torque): Los motores deben superar la inercia del robot y el rozamiento del suelo. Para eso, se eligió un motor con un torque mínimo de 2 kg·cm en las ruedas traseras.
+- Potencia: La potencia eléctrica se dimensionó en función del consumo del motor DC (~6W por motor) y el servomotor (~2-3W en carga), permitiendo alimentar el sistema con una batería Li-ion de 7.4V.
+
+### 3. Diseño y Selección del Chasis
+
+El chasis fue diseñado en CAD 3D para ser liviano, resistente y fácil de imprimir en una impresora 3D FDM. Utilicé PLA reforzado como material principal por su buena relación rigidez/peso. La forma del chasis favorece la distribución de peso centrada, con espacio suficiente para el servo, motores, controlador y batería.
+
+### 4. Montaje de Componentes
+
+- El chasis impreso contiene ranuras específicas para montar los motores DC y sus reductoras usando tornillos M3.
+- El servo de dirección se acopla con dos tornillos a un soporte elevado en el centro del eje delantero.
+- Las ruedas delanteras están conectadas por una barra rígida impresa en 3D que transmite el movimiento angular del servo.
+- La Raspberry Pi 5, el controlador motor y la batería se fijan al chasis mediante bridas plásticas o tornillos autorroscantes en zonas ya previstas en el diseño.
+
+---
+
+
+### Control del Movimiento (Actuadores):
+
+Motores Modificadores Ópticos Makeblock 180: Estos motores son los encargados de la propulsión del robot, conectados a las ruedas traseras. Incluyen codificadores ópticos que nos dan retroalimentación precisa sobre la velocidad y la distancia recorrida, información vital para la odometría y un control de movimiento exacto.
+
+Puente H: Funciona como la interfaz de potencia entre la Raspberry Pi 5 y los motores Makeblock 180. Permite a la Pi controlar la dirección y la velocidad de los motores (mediante PWM) con señales de bajo voltaje.
+
+Servomotor (Dirección): Este servomotor es crucial para el control preciso del ángulo de las ruedas delanteras directrices. La Raspberry Pi 5 le envía señales PWM para posicionar las ruedas con exactitud, permitiendo giros controlados y suaves.
+
+Percepción del Entorno (Sensores):
+
+Raspberry Pi AI Camera: Este es el principal sensor visual del robot. Conectada a la Raspberry Pi 5, nos permite implementar visión por computadora y algoritmos de Inteligencia Artificial. La cámara procesa el entorno para:
+
+Detección y Reconocimiento de Objetos: Identifica obstáculos, marcas o elementos clave en el entorno.
+
+Seguimiento de Trayectorias: Percibe líneas o caminos a seguir.
+
+Análisis Espacial: Comprende la profundidad y la disposición de los elementos.
+La potente Raspberry Pi 5 puede procesar estos datos de imagen en tiempo real, permitiendo al robot tomar decisiones informadas sobre su navegación y acciones.
+
+Software de Control: Todo el sistema lo gestiona el software que se ejecuta en la Raspberry Pi 5, desarrollado principalmente en Python. Este software integra las lecturas de los codificadores y la cámara, procesa la información y genera las señales de control para el Puente H y el servomotor, coordinando así todos los aspectos del movimiento y la interacción del robot con su entorno.
+
+---
+
+# 🤖 Sistema de Rueda y Eje para Nuestro Robot ⚙️
+
+¡Bienvenidos a la sección de hardware de nuestro proyecto! Aquí explicaremos cómo se ensamblan las piezas clave para el movimiento de nuestro robot. La imagen de arriba muestra un "despiece" de los componentes esenciales que conforman una de las unidades de rueda.
+
+---
+
+### Visión General del Ensamblaje
+
+Este sistema está diseñado para proporcionar una rotación fluida y robusta, fundamental para la locomoción de nuestro robot. Cada componente juega un papel crucial en la durabilidad y eficiencia del movimiento.
+
+Es importante destacar que este diseño en particular está pensado para las ruedas delanteras de nuestro robot, actuando como las ruedas directrices. Esto significa que estas unidades serán responsables de la dirección del vehículo. Las ruedas traseras, por su parte, serán las que vayan impulsadas directamente por un motor, complementando este sistema para mejorar significativamente la movilidad y la capacidad de maniobra de nuestro vehículo.
+
+---
+
+### Desglose del Proceso de Montaje
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Armado%20del%20Vehiculo/imagen%202.png)
+
+El montaje de este subsistema se concibe en una secuencia lógica que asegura la correcta funcionalidad y alineación de las partes:
+
+1.  **Eje y Rodamiento:**
+    El punto de partida es el **eje**, un elemento central sobre el cual se montará el **rodamiento**. Este rodamiento es una pieza ingenieril clave, cuya función principal es minimizar la fricción, permitiendo que el eje (y, por ende, la rueda) gire con la mayor suavidad posible y con un mínimo desgaste.
+
+2.  **Soporte del Rodamiento:**
+    Una vez que el rodamiento está posicionado en el eje, ambos se alojan dentro del **soporte de rodamiento**. Este soporte se compone de dos mitades que se unen, encapsulando y asegurando el rodamiento en su lugar. La unión de estas dos secciones se logra mediante el uso de **tornillos y tuercas más pequeños**, garantizando que el rodamiento quede firmemente contenido, pero con libertad para girar sobre el eje.
+
+3.  **Fijación de la Rueda:**
+    Con el eje y el conjunto de rodamiento/soporte listos, la **rueda** se desliza sobre el extremo libre del eje. Para asegurar que la rueda no se desplace ni se suelte durante el funcionamiento de nuestro robot, se utiliza una **tuerca adicional** que se rosca firmemente en el extremo del eje, fijando la rueda en su posición adecuada.
+
+4.  **Integración en el Chasis del Robot:**
+    Finalmente, este ensamblaje completo (compuesto por la rueda, el eje, el rodamiento y su soporte) se integra directamente en la estructura principal de nuestro robot. El diseño del **soporte de rodamiento** incluye puntos de montaje que permiten su fijación segura al chasis o a los brazos de suspensión, si los tuviera. Esta integración no solo proporciona el anclaje físico, sino que también establece el punto de pivote exacto para la rotación de la rueda, siendo esencial para la dinámica de movimiento de nuestro robot.
+
+---
+
+# 🤖 Distribución de Componentes en el Chasis del Robot ⚙️
+
+Nuestro chasis ha sido meticulosamente diseñado para una distribución específica de componentes, buscando optimizar el centro de gravedad y facilitar el proceso de montaje. A continuación, detallamos la ubicación estratégica de los elementos principales:
+
+---
+
+### Colocación de Componentes Clave en la Primera Placa:
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2010.jpg)
+
+* **Motor:** Se ubica y fija en la parte trasera del chasis. Esta posición estratégica ayuda a concentrar el peso, optimizando la tracción y el balance general del robot.
+
+* **Baterías (Pilas):** Se colocan centralmente en el chasis y se aseguran mediante tornillos. Esta disposición es crucial para lograr una distribución equilibrada del peso, lo que mejora significativamente la estabilidad y la maniobrabilidad del vehículo.
+
+* **Regulador de Voltaje (Regulador):** Aunque no es visible en la disposición general, se situará típicamente cerca de las baterías. Su función es regular el voltaje de entrada para alimentar de forma estable y segura el resto de la electrónica de control del robot.
+
+* **Puente H:** Este componente clave se colocará lo más próximo al motor posible. Esta cercanía minimiza la longitud del cableado, lo que reduce las pérdidas de energía y optimiza el control de dirección y velocidad del motor.
+
+* **Servomotor: Este componente se ubicará en la parte delantera del chasis. Su función principal es controlar el mecanismo de dirección de las ruedas delanteras, permitiendo al robot cambiar de trayectoria con precisión
+---
+
+
+🤖 Ensamblaje del Robot: Distribución de Componentes en el Chasis ⚙️
+Nuestro chasis ha sido meticulosamente diseñado para una distribución estratégica de componentes, buscando optimizar el centro de gravedad, la funcionalidad y la facilidad de montaje. A continuación, detallamos la ubicación pensada para los elementos clave:
+
+---
+
+Disposición de Componentes de Percepción y Procesamiento (Segundo Piso):
+
+Estos componentes vitales para la inteligencia y operación del robot se alojarán en una placa superior o "segundo piso", que se montará sobre el chasis principal, aprovechando estructuras como las mostradas en "Elemento 11.jpg".
+
+---
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Models/Elemento%2011.jpg))
+
+
+Soporte Frontal Vertical (Cámara y Módulo): Esta estructura, parte del segundo piso o conectada a él, está diseñada específicamente para montar la cámara y su módulo adicional en la parte frontal elevada. Su posición estratégica garantiza un campo de visión despejado y alto, crucial para tareas como la detección de obstáculos, navegación y mapeo ambiental.
+
+Espacio Inferior del Segundo Piso (Raspberry Pi y Puente H): En la zona inferior de este segundo nivel (o sobre la superficie de esta placa superior) se destinará el espacio para el Powerbank y la Raspberry Pi. Esta ubicación es fundamental para mantener el "cerebro" del robot (Raspberry Pi) y su fuente de energía suplementaria (Powerbank) accesibles, a la vez que se optimiza el cableado y se minimiza la altura total, contribuyendo al centro de gravedad general del conjunto.
+
+---
+
+# Electrónica
+
+---
+
+Nuestro sistema electrónico, que impulsa y controla cada movimiento de nuestro robot, está cuidadosamente ensamblado con los siguientes elementos clave:
+-	Raspberry Pi 5
+-	Raspberry Pi AI Camera
+-	Servomotor
+-	Motor Modificador Óptico Makeblock 180
+-	Puente H
+- Regulador de Voltaje
+-	Baterías
+-	Switch
+-	Power Bank 
+
+  
+A continuación, se presentará el Diagrama de Cableado que ilustra cómo estos componentes se interconectan para funcionar en armonía.
+
+![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Diagrama%20de%20Cableado%20II.jpg)
+
+Explicación del Diagrama Expuesto
+
+Raspberry Pi: Es la computadora principal del sistema. Recibe información de algunos componentes y envía órdenes a otros.
+
+Power Bank: Este es la fuente de energía exclusiva para la Raspberry Pi. Le suministra la electricidad necesaria para funcionar.
+
+Baterías: Estas baterías son la fuente de energía exclusiva para los motores. Suministran electricidad al Módulo Regulador de Voltaje y al Módulo de Driver de Motor.
+
+Módulo de Driver de Motor: Este módulo se conecta a la Raspberry Pi (para recibir órdenes) y a las baterías (para obtener energía). Se usa específicamente para controlar el motor DC con encoder.
+
+Servo Motor: Este motor puede moverse a posiciones específicas y se controla a través del drive.
+
+Motor DC con Encoder: Este es un motor que gira continuamente, y el "encoder" le permite a la Raspberry Pi saber exactamente qué tan rápido está girando o qué posición tiene. También se controla a través del driver del motor.
+
+Módulo Regulador de Voltaje: Este módulo toma la energía de las baterías (las rojas) y la ajusta a un voltaje específico que necesita el servomotor, asegurando que reciba la cantidad correcta de energía de manera estable. 
+
+Cámara: Esta cámara se conecta directamente a la Raspberry Pi. Permite a la Raspberry Pi "ver" y capturar imágenes o video.
+
+****
+
+---
 
 ---
 
@@ -100,7 +312,60 @@ La **Raspberry Pi AI Camera** es fundamental para nuestro robot porque permite l
 
 ## ⚡ Gestión de la Potencia y los Sensores
 
-Nuestro robot gestiona su energía mediante baterías de litio que, a través de un regulador de voltaje, alimentan de forma estable la Raspberry Pi 5 y la Raspberry Pi AI Camera. Un simple switch enciende y apaga el sistema. Para el control del movimiento, la Raspberry Pi 5 se comunica con los motores Makeblock 180 (que tienen codificadores ópticos para precisión) a través de un Puente H, y dirige las ruedas delanteras directrices con un servomotor. La Raspberry Pi AI Camera actúa como el sensor visual principal, permitiendo a la Pi procesar el entorno con visión por computadora e inteligencia artificial, todo orquestado por software basado en Python para una navegación y operación autónoma.
+# Gestión de Potencia y Control de Sentido del Vehiculo
+
+---
+
+Este documento detalla la estrategia de gestión de potencia y el sistema de control de sentido implementados en nuestro robot, utilizando una Raspberry Pi 5 y la Raspberry Pi AI Camera.
+
+---
+
+## Gestión de Energía y Sensores
+
+Esta sección aborda cómo el vehículo gestiona su energía y sensores para navegar con precisión y eficiencia en los desafíos del entorno. Se detalla la fuente de alimentación, los sensores utilizados, su justificación técnica y el impacto de estos en el comportamiento del robot, así como un resumen del consumo energético.
+
+## 1. Fuente de Energía
+El robot utiliza dos fuentes de energía diferenciadas:
+
+- Power Bank USB de 5V 3A: Alimenta exclusivamente a la Raspberry Pi 5, garantizando una alimentación estable y continua. Esta opción es práctica, segura y evita la necesidad de reguladores externos para la Raspberry.
+
+- Batería Li-ion de 7.4V (mínimo 2000 mAh): Alimenta directamente el motor DC con encoder (propulsión) y el servomotor SG90 (dirección). Esta batería está conectada a través de un módulo de control de motor (usando GPIO y PWM desde la Raspberry Pi).
+
+Este enfoque separa las cargas de procesamiento y movimiento, evitando caídas de tensión en la Raspberry Pi debido a picos de corriente de los motores.
+
+Regulador de Voltaje (Buck Converter): Como la Raspberry Pi 5 y la Raspberry Pi AI Camera operan a 5V, y nuestras baterías de litio tienen un voltaje nominal más alto, un regulador de voltaje DC-DC (buck converter) es indispensable. Este componente reduce y estabiliza el voltaje de las baterías a los 5V requeridos, protegiendo la electrónica sensible de sobretensiones y fluctuaciones.
+
+Switch Principal: Un interruptor físico nos permite encender y apagar el robot de forma segura, controlando el flujo general de energía desde las baterías.
+
+## 2. Sensores
+El sistema utiliza múltiples sensores y módulos para recopilar información del entorno:
+
+- Cámara Picamera2: Captura video en tiempo real, analiza el entorno mediante visión artificial y detecta colores (negro, azul y naranja) en formato HSV para identificar líneas de guía, obstáculos y realizar conteo de vueltas.
+
+- Encoder en motor DC: Permite medir la rotación del motor, ayudando al conteo de vueltas.
+El sistema tiene un pin asignado para un encoder, pero la funcionalidad de conteo de vueltas actual se basa puramente en la visión por computadora.
+
+- Servomotor SG90: Aunque es un actuador, responde constantemente a los comandos del sistema basados en los datos provenientes de los sensores para ejecutar giros precisos.
+
+  ## 3. Consumo de Energía
+Se estima el siguiente consumo energético:
+
+- Raspberry Pi 5 (desde Power Bank): ~2.5 A @ 5V
+- Motor DC: ~0.8 A @ 7.4V
+- Servomotor SG90: ~150 mA @ 5V
+- Cámara Picamera2: ~250 mA @ 5V (alimentada por la Raspberry)
+
+El sistema completo requiere una batería con una capacidad mínima de 15 Wh para operar durante una sesión completa.
+
+## 4. Justificación de Selección de Componentes
+Los componentes fueron seleccionados por su eficiencia y compatibilidad:
+
+- El motor DC con encoder permite una propulsión controlada y precisa, útil para detectar vueltas sin sensores adicionales.
+- El servomotor SG90 proporciona dirección precisa y rápida con bajo consumo energético.
+- La cámara permite reducir la cantidad de sensores al detectar colores y obstáculos simultáneamente mediante visión artificial.
+
+El código de control implementado en Python gestiona la interpretación de los datos de los sensores y actúa en consecuencia, ajustando la dirección, velocidad y decisiones del robot según las condiciones del entorno.
+
 
 ---
 
