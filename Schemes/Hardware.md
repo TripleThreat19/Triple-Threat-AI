@@ -84,17 +84,57 @@ El chasis fue diseñado en CAD 3D para ser liviano, resistente y fácil de impri
 
 Este documento detalla la estrategia de gestión de potencia y el sistema de control de sentido implementados en nuestro robot, utilizando una Raspberry Pi 5 y la Raspberry Pi AI Camera.
 
-1. Gestión de Potencia
-Asegurar un suministro de energía estable y eficiente es crucial para el rendimiento y la durabilidad de los componentes del robot.
+---
 
-Baterías de Litio: La fuente de energía principal de nuestro robot son las baterías de litio. Las seleccionamos por su alta densidad energética y eficiencia, ya que proveen la energía necesaria para todos los sistemas. La capacidad y el voltaje específicos (por ejemplo, 3S LiPo, 11.1V) los elegimos según el consumo total estimado de los motores y la electrónica.
+
+## Gestión de Energía y Sensores
+
+Esta sección aborda cómo el vehículo gestiona su energía y sensores para navegar con precisión y eficiencia en los desafíos del entorno. Se detalla la fuente de alimentación, los sensores utilizados, su justificación técnica y el impacto de estos en el comportamiento del robot, así como un resumen del consumo energético.
+
+## 1. Fuente de Energía
+El robot utiliza dos fuentes de energía diferenciadas:
+
+- Power Bank USB de 5V 3A: Alimenta exclusivamente a la Raspberry Pi 5, garantizando una alimentación estable y continua. Esta opción es práctica, segura y evita la necesidad de reguladores externos para la Raspberry.
+
+- Batería Li-ion de 7.4V (mínimo 2000 mAh): Alimenta directamente el motor DC con encoder (propulsión) y el servomotor SG90 (dirección). Esta batería está conectada a través de un módulo de control de motor (usando GPIO y PWM desde la Raspberry Pi).
+
+Este enfoque separa las cargas de procesamiento y movimiento, evitando caídas de tensión en la Raspberry Pi debido a picos de corriente de los motores.
 
 Regulador de Voltaje (Buck Converter): Como la Raspberry Pi 5 y la Raspberry Pi AI Camera operan a 5V, y nuestras baterías de litio tienen un voltaje nominal más alto, un regulador de voltaje DC-DC (buck converter) es indispensable. Este componente reduce y estabiliza el voltaje de las baterías a los 5V requeridos, protegiendo la electrónica sensible de sobretensiones y fluctuaciones.
 
 Switch Principal: Un interruptor físico nos permite encender y apagar el robot de forma segura, controlando el flujo general de energía desde las baterías.
 
-2. Control de Sentidos (Movimiento y Percepción)
-La Raspberry Pi 5 actúa como el cerebro central, orquestando tanto el movimiento físico del robot como su capacidad para percibir e interpretar el entorno.
+## 2. Sensores
+El sistema utiliza múltiples sensores y módulos para recopilar información del entorno:
+
+- Cámara Picamera2: Captura video en tiempo real, analiza el entorno mediante visión artificial y detecta colores (negro, azul y naranja) en formato HSV para identificar líneas de guía, obstáculos y realizar conteo de vueltas.
+
+- Encoder en motor DC: Permite medir la rotación del motor, ayudando al conteo de vueltas.
+El sistema tiene un pin asignado para un encoder, pero la funcionalidad de conteo de vueltas actual se basa puramente en la visión por computadora.
+
+- Servomotor SG90: Aunque es un actuador, responde constantemente a los comandos del sistema basados en los datos provenientes de los sensores para ejecutar giros precisos.
+
+  ## 3. Consumo de Energía
+Se estima el siguiente consumo energético:
+
+- Raspberry Pi 5 (desde Power Bank): ~2.5 A @ 5V
+- Motor DC: ~0.8 A @ 7.4V
+- Servomotor SG90: ~150 mA @ 5V
+- Cámara Picamera2: ~250 mA @ 5V (alimentada por la Raspberry)
+
+El sistema completo requiere una batería con una capacidad mínima de 15 Wh para operar durante una sesión completa.
+
+## 4. Justificación de Selección de Componentes
+Los componentes fueron seleccionados por su eficiencia y compatibilidad:
+
+- El motor DC con encoder permite una propulsión controlada y precisa, útil para detectar vueltas sin sensores adicionales.
+- El servomotor SG90 proporciona dirección precisa y rápida con bajo consumo energético.
+- La cámara permite reducir la cantidad de sensores al detectar colores y obstáculos simultáneamente mediante visión artificial.
+
+El código de control implementado en Python gestiona la interpretación de los datos de los sensores y actúa en consecuencia, ajustando la dirección, velocidad y decisiones del robot según las condiciones del entorno.
+
+
+---
 
 Control del Movimiento (Actuadores):
 
