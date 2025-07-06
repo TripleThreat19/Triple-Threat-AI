@@ -136,7 +136,7 @@ El código de control implementado en Python gestiona la interpretación de los 
 
 ---
 
-Control del Movimiento (Actuadores):
+### Control del Movimiento (Actuadores):
 
 Motores Modificadores Ópticos Makeblock 180: Estos motores son los encargados de la propulsión del robot, conectados a las ruedas traseras. Incluyen codificadores ópticos que nos dan retroalimentación precisa sobre la velocidad y la distancia recorrida, información vital para la odometría y un control de movimiento exacto.
 
