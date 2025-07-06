@@ -255,6 +255,26 @@ A continuación, se presentará el Diagrama de Cableado que ilustra cómo estos 
 
 ![Motor Codificador Optico Makeblock 180](https://github.com/TripleThreat19/Triple-Threat-AI/blob/main/Schemes/Diagrama%20de%20Cableado%20II.jpg)
 
+Explicación del Diagrama Expuesto
+
+Raspberry Pi: Es la computadora principal del sistema. Recibe información de algunos componentes y envía órdenes a otros.
+
+Power Bank: Este es la fuente de energía exclusiva para la Raspberry Pi. Le suministra la electricidad necesaria para funcionar.
+
+Baterías: Estas baterías son la fuente de energía exclusiva para los motores. Suministran electricidad al Módulo Regulador de Voltaje y al Módulo de Driver de Motor.
+
+Módulo de Driver de Motor: Este módulo se conecta a la Raspberry Pi (para recibir órdenes) y a las baterías (para obtener energía). Se usa específicamente para controlar el motor DC con encoder.
+
+Servo Motor: Este motor puede moverse a posiciones específicas y se controla a través del drive.
+
+Motor DC con Encoder: Este es un motor que gira continuamente, y el "encoder" le permite a la Raspberry Pi saber exactamente qué tan rápido está girando o qué posición tiene. También se controla a través del driver del motor.
+
+Módulo Regulador de Voltaje: Este módulo toma la energía de las baterías (las rojas) y la ajusta a un voltaje específico que necesita el servomotor, asegurando que reciba la cantidad correcta de energía de manera estable. 
+
+Cámara: Esta cámara se conecta directamente a la Raspberry Pi. Permite a la Raspberry Pi "ver" y capturar imágenes o video.
+
+****
+
 ---
 
 ### 💡 Componentes del Vehículo
